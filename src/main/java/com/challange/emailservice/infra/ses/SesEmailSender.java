@@ -13,7 +13,7 @@ public class SesEmailSender implements EmailSenderGateway {
     private final AmazonSimpleEmailService amazonSimpleEmailService;
 
     @Autowired
-    public SesEmailSender(@SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection") AmazonSimpleEmailService amazonSimpleEmailService){
+    public SesEmailSender(AmazonSimpleEmailService amazonSimpleEmailService){
         this.amazonSimpleEmailService= amazonSimpleEmailService;
     }
 
